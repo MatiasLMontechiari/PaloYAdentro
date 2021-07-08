@@ -1,0 +1,185 @@
+body {
+  font-family: 'Poppins';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins';
+  font-weight: 700 !important;
+}
+
+body:not(.offline) .offline-banner {
+  height: 24px;
+  margin-top: -24px;
+  position: absolute;
+  z-index: 3000;
+   width: 100%;
+  transition: all 0.5s;
+}
+
+body.offline .offline-banner {
+  transition: all 0.5s;
+  margin: 0;
+  position: absolute;
+   width: 100%;
+  z-index: 3000;
+  color: white;
+}
+
+.bg-danger {
+  background-color: #c70f21!important;
+}
+
+.bg-danger {
+  color: var(--gris-claro);
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: rgb(7, 7, 7) !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(33, 148, 9, 0.7);
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+
+}
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 50px);
+  padding-bottom: 7rem;
+  background: #080a07;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 2rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 4.5rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 2rem;
+  }
+}
+
+.bg-primary {
+  background-color: #3e8529 !important;
+}
+
+.btn-primary {
+  background-color: #3e8529;
+  border-color: #3e8529;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #1a3811 !important;
+  border-color: #1a3811 !important;
+}
+
+.pelota {
+  background: url(http://upload.wikimedia.org/wikipedia/en/e/ec/Soccer_ball.svg);
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  -webkit-animation:roll 4.5s infinite;
+  -moz-animation:roll 4.5s infinite;
+  animation:roll 4.5s infinite;
+}
+
+@-moz-keyframes roll {  
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:700px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+@-webkit-keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:700px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+
+@keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:700px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+
+@media only screen and (min-width: 768px){
+  .card{
+    width: 30%;
+  }
+}
+
+.card {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #101113;
+  color: whitesmoke;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 0.5rem;
+}
+
+.card:hover {
+  background-color: #1d1f22;
+}
+
+.app {
+  padding-top: calc(2rem + 50px);
+  padding-bottom: 2rem;
+  background-color: #080a07;
+}
+
+iframe {
+  border-radius: 20px 20px 0px 0px;
+}
