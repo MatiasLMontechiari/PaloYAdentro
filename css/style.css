@@ -81,10 +81,9 @@ header.masthead {
   padding-top: calc(7rem + 50px);
   padding-bottom: 7rem;
   background: #080a07;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  width: 100vw;
 }
 
 header.masthead .masthead-content {
@@ -133,9 +132,10 @@ header.masthead .masthead-content .masthead-subheading {
   height: 100px;
   width: 100px;
   position: relative;
-  -webkit-animation:roll 4.5s infinite;
-  -moz-animation:roll 4.5s infinite;
-  animation:roll 4.5s infinite;
+  -webkit-animation:roll 10.5s infinite;
+  -moz-animation:roll 10.5s infinite;
+  animation:roll 10.5s infinite;
+  overflow: hidden;
 }
 
 @-moz-keyframes roll {  
