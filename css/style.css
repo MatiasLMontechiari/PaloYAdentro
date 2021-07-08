@@ -132,9 +132,9 @@ header.masthead .masthead-content .masthead-subheading {
   height: 100px;
   width: 100px;
   position: relative;
-  -webkit-animation:roll 10.5s infinite;
-  -moz-animation:roll 10.5s infinite;
-  animation:roll 10.5s infinite;
+  -webkit-animation:roll 6.5s infinite;
+  -moz-animation:roll 6.5s infinite;
+  animation:roll 6.5s infinite;
   overflow: hidden;
 }
 
