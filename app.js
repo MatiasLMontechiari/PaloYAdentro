@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       [scorebatRes] = await Promise.all([scorebatFetch]),
       scorebatData = await scorebatRes.json();
 
-    console.log(scorebatRes);
-    console.log(scorebatData[0].title);
-
     //Solo traemos las HightLights solo de la Copa America y La Copa del Mundo que ya incluyen los goles y mejores jugadas del partido
     for (let i = 0; i < scorebatData.length; i++) {
       for (let j = 0; j < scorebatData[i].videos.length; j++) {
