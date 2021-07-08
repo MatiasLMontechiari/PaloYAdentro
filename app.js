@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     try{
         const app = document.querySelector(".app")
         let videoCardsTemplate="",
-        scorebatAPI=`https://www.scorebat.com/video-api/v11/`,
+        scorebatAPI=`https://www.scorebat.com/video-api/v1/`,
         scorebatFetch= fetch(scorebatAPI),
         [scorebatRes] = await Promise.all([scorebatFetch]),
         scorebatData = await scorebatRes.json();
